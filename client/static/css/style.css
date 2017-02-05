@@ -1,0 +1,165 @@
+/*=================================================================
+ ============================ Nav ================================
+ =================================================================*/
+
+.nav{
+  /*outline: 1px solid blue;*/
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 40%;
+  margin-bottom: 5px;
+}
+.homeNav{
+  margin-left: 70%;
+}
+.newQ{
+  margin-left: 75%;
+}
+
+
+.nav p{
+  color: blue;
+  /*text-align: right;*/
+  text-decoration: underline;
+  margin: 15px;
+  /*margin-right: 145px;*/
+  display: inline-block;
+}
+
+.nav p:hover{
+  cursor: pointer;
+}
+
+.logout {
+  margin-left: 65%;
+}
+
+.logout p:hover {
+  cursor: pointer;
+}
+
+
+/*=================================================================
+ ============================ Home ================================
+ =================================================================*/
+.loginMask{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8)
+}
+
+
+.logReg{
+  width: 600px;
+  height: 350px;
+  background: white;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 300px);
+}
+
+.container h1{
+  margin-left: 5%;
+}
+
+.regPrompt{
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+.regPrompt{
+  text-align: center;
+}
+
+.regPrompt input{
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.filterHome{
+  width: 90%;
+  margin-left: 65%;
+  margin-bottom: 15px;
+}
+
+.questions{
+  outline: 1px solid black;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+  .questions td{
+    border-top: 1px solid black;
+    text-align: left;
+  }
+  .questions td a{
+    color: blue;
+    text-decoration: underline;
+  }
+  .questions td a:hover{
+    cursor: pointer;
+  }
+  .questions td button:hover{
+    cursor: pointer;
+  }
+
+
+/*=================================================================
+ ========================= New Question ===========================
+ =================================================================*/
+.error{
+  text-align: center;
+  color: red;
+}
+
+.newQtitle {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.newQuestionForm label{
+  display: block;
+  margin: 15px;
+}
+
+.newQuestionForm input{
+  width: 200px;
+  margin-left: 15px;
+}
+
+.bigQ input{
+  width: 300px;
+}
+
+.newQuestionForm button{
+  margin-left: 400px;
+}
+
+
+
+/*=================================================================
+ ============================= Vote ===============================
+ =================================================================*/
+
+.header{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.voteContainer{
+  outline: 1px solid black;
+  width: 50%;
+}
+  .voteContainer td{
+    border-top: 1px solid black;
+    text-align: center;
+    width: 25%;
+  }
+  .voteContainer td button:hover{
+    cursor: pointer;
+  }

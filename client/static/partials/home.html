@@ -1,0 +1,53 @@
+<div class="nav homeNav">
+  <p ng-click='addNewPage()'>Create a New Poll</p>
+  <p ng-click='logout()'>Logout</p>
+</div>
+
+<h2>{{message}}</h2>
+
+<!-- Login Mask -->
+<div class="loginMask" ng-show='showPrompt'>
+  <div class="logReg">
+    <h2>{{login_error}}</h2>
+
+    <div class="regPrompt">
+      <h3>Register</h3>
+      <label>Name: <input type="text"  ng-model="reg.name"></label>
+      <button type="button" name="button" ng-click="regUser()">Register</button>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="container">
+  <h1>Current Polls:</h1>
+
+  <div class="filterHome">
+  <label> Search: <input type="text" ng-model="filter_complaint" > </label>
+  </div>
+
+
+  <table class="questions">
+    <thead>
+      <th>Name</th>
+      <th>Survey Question</th>
+      <th>Date Posted</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+
+      <tr ng-repeat='q in allQuestions | filter: filter_complaint'>
+        <td>{{q._user.name}}</td>
+        <td><a ng-click='vote(q._id)'>{{q.question}}</a></td>
+        <td>{{q.createdAt | date: MddYY}}</td>
+        <td><button ng-if='q._user._id == user._id' ng-click='deletePoll(q._id)' >Delete</button></td>
+        <!-- <td>user Name: {{user.name}} , User ID: {{user._id}} , Question User ID: {{q._user._id}}</td> -->
+      </tr>
+    </tbody>
+  </table>
+
+</div> <!-- End Container -->

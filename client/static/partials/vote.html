@@ -1,0 +1,43 @@
+
+<div class="header">
+  <h2>{{question.question}}?</h2>
+  <p>Click the Vote button to choose one</p>
+</div>
+
+<div class="nav">
+  <p ng-click='backHome()'>Go to Polls</p>
+</div>
+
+<div class="voteContainer">
+
+  <table>
+    <tbody>
+      <thead>
+        <th>Option</th>
+        <th>Current Count of Votes</th>
+        <th>Action</th>
+      </thead>
+      <tr>
+        <td>{{question.opt1}}</td>
+        <td>{{question.opt1Votes}}</td>
+        <td><button ng-click='voteOpt1()'>Vote</button></td>
+      </tr>
+      <tr>
+        <td>{{question.opt2}}</td>
+        <td>{{question.opt2Votes}}</td>
+        <td><button ng-click='voteOpt2()'>Vote</button></td>
+      </tr>
+      <tr>
+        <td>{{question.opt3}}</td>
+        <td>{{question.opt3Votes}}</td>
+        <td><button ng-click='voteOpt3()'>Vote</button></td>
+      </tr>
+      <tr>
+        <td>{{question.opt4}}</td>
+        <td>{{question.opt4Votes}}</td>
+        <td><button ng-click='voteOpt4()'>Vote</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

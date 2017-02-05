@@ -1,0 +1,35 @@
+<div class="nav newQ">
+<p ng-click='backHome()'>Cancel</p>
+</div>
+
+<h2 class="error">{{message}}</h2>
+<h2 class="newQtitle">Put the new question and options here:</h2>
+
+<div class="newQuestionForm">
+
+<form>
+  <label class='bigQ'>Question:
+    <input type="text" ng-model='newQuestion.question'>
+  </label>
+
+  <label>Option 1:
+    <input type="text" ng-model='newQuestion.opt1'>
+  </label>
+
+  <label>Option 2:
+    <input type="text" ng-model='newQuestion.opt2'>
+  </label>
+
+  <label>Option 3:
+    <input type="text" ng-model='newQuestion.opt3'>
+  </label>
+
+  <label>Option 4:
+    <input type="text" ng-model='newQuestion.opt4'>
+  </label>
+
+  <button ng-click='submitNewQuestion()'>Create Poll</button>
+
+  </form>
+
+</div>
